@@ -1,6 +1,4 @@
-<p align='center'>
-  <img src='https://user-images.githubusercontent.com/45350572/138070856-731c849a-466b-41a2-b39d-c5b5e76e94fa.png' alt='Vitailse - Opinionated Vite Starter Template with TailwindCSS' width='300'/>
-</p>
+# Vue-Tailwind-Starter-Template
 
 Opinionated Vite starter template with [TailwindCSS](https://tailwindcss.com/) 
 
@@ -90,9 +88,10 @@ Inspired by [Vitesse](https://github.com/antfu/vitesse) ❤
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-npx degit zynth17/vitailse my-vitailse-app
-cd my-vitailse-app
+npx degit mardix/vue-tailwind-starter-template .
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
+# or 
+npm install
 ```
 
 ## Checklist
