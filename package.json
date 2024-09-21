@@ -1,19 +1,14 @@
 {
-	"name": "@mardix/vue-tailwind-starter-template",
-	"description": "Vite starter template with TailwindCSS",
+	"name": "app",
+	"description": "",
 	"version": "0.1.0",
 	"main": "src/main.ts",
-	"keywords": [
-		"vitailse",
-		"tailwindcss",
-		"vite",
-		"vitesse"
-	],
 	"author": "",
-	"license": "MIT",
+	"license": "",
 	"scripts": {
 		"dev": "vite",
-		"build": "vite-ssg build",
+		"build": "vite build",
+		"buildx": "vite-ssg build",
 		"serve": "vite preview",
 		"https-preview": "serve dist"
 	},
@@ -29,6 +24,7 @@
 		"autoprefixer": "^10.4.7",
 		"pinia": "^2.0.16",
 		"postcss": "^8.4.14",
+		"primeicons": "^7.0.0",
 		"primevue": "^4.0.7",
 		"tailwindcss": "^3.1.6",
 		"tailwindcss-primeui": "^0.3.4",
