@@ -1,5 +1,5 @@
 <script setup lang="ts">
-	import { useStore } from '@/store';
+	import { useStore } from '@/app/store';
 	import VitailseLogo from '@/assets/logo.png';
 	useHead({
 		title: 'Vitailse | Opinionated vite starter template',
