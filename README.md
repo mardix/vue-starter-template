@@ -1,6 +1,6 @@
 # vue-starter-template
 
-A Vue3/Vite 6 starter template to build website with Tailwind, Pinia, DaisyUI, and Markdown.
+A Vue3/Vite starter template to build website with Tailwind, Pinia, DaisyUI, and Markdown.
 
 Inspired by [Vitesse](https://github.com/antfu/vitesse) ❤
 
@@ -26,7 +26,7 @@ pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 
 - ⚡️ [Vue 3](https://github.com/vuejs/vue-next)
 
-- [Vite 6](https://github.com/vitejs/vite)
+- [Vite](https://github.com/vitejs/vite)
 
 - 🗂 [File based routing](./src/pages)
 
