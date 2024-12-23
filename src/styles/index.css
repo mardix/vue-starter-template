@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.markdown-body {
+  @apply mx-auto max-w-4xl text-slate-700 tracking-wide;
+
+  h1 {
+    @apply font-bold text-center text-3xl my-10
+  }
+  h2 {
+    @apply my-4 font-bold text-xl
+  }
+
+  h3 {
+    @apply my-4 font-semibold text-base
+  }
+
+  ul {
+    @apply ml-6 list-disc my-6
+  }
+
+  ul li {
+    @apply my-2 text-sm
+  }
+
+  p {
+    @apply text-base
+  }
+}

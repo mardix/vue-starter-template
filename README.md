@@ -1,12 +1,32 @@
-# Vue-Tailwind-Starter-Template
+# vue-starter-template
 
-Opinionated Vite starter template with [TailwindCSS](https://tailwindcss.com/) 
+A Vue3/Vite 6 starter template to build website with Tailwind, Pinia, DaisyUI, and Markdown.
 
 Inspired by [Vitesse](https://github.com/antfu/vitesse) ❤
 
+---
+
+## Quick Setup
+
+In a brand new repository
+
+```bash
+npx degit mardix/vue-starter-template .
+
+npm install
+
+# or 
+pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
+
+```
+
+---
+
 ## Features
 
-- ⚡️ [Vue 3](https://github.com/vuejs/vue-next), [Vite 2](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/), [ESBuild](https://github.com/evanw/esbuild) - born with fastness
+- ⚡️ [Vue 3](https://github.com/vuejs/vue-next)
+
+- [Vite 6](https://github.com/vitejs/vite)
 
 - 🗂 [File based routing](./src/pages)
 
@@ -16,11 +36,17 @@ Inspired by [Vitesse](https://github.com/antfu/vitesse) ❤
 
 - 📑 [Layout system](./src/layouts)
 
-- 📲 [PWA](https://github.com/antfu/vite-plugin-pwa)
-
 - 🌍 [I18n ready](./locales)
 
 - 🎨 [Tailwind CSS](https://tailwindcss.com/) - Rapidly build modern websites without ever leaving your HTML.
+
+- DaisyUI
+
+- Dayjs 
+
+- Lodash 
+
+- Markdown
 
 - 😃 [Use icons from any icon sets, with no compromise](https://github.com/antfu/unplugin-icons)
 
@@ -78,20 +104,25 @@ Inspired by [Vitesse](https://github.com/antfu/vitesse) ❤
   - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify) - Icon inline display and autocomplete
   - [TailwindCSS Intellisense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) - IDE support for Tailwind CSS
   - [i18n Ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally) - All in one i18n support
+
 ## Try it now!
+
 ### GitHub Template
 
-[Create a repo from this template on GitHub](https://github.com/zynth17/vitailse/generate).
+[Create a repo from this template on GitHub](https://github.com/mardix/vue-starter-template/generate).
 
 ### Clone to local
 
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-npx degit mardix/vue-tailwind-starter-template .
+npx degit mardix/vue-starter-template .
+
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
+
 # or 
 npm install
+
 ```
 
 ## Checklist

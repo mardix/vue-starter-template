@@ -6,19 +6,24 @@ import AutoImport from 'unplugin-auto-import/vite';
 import Icons from 'unplugin-icons/vite';
 import IconsResolver from 'unplugin-icons/resolver';
 import Layouts from 'vite-plugin-vue-layouts';
-import { VitePWA } from 'vite-plugin-pwa';
 import VueI18n from '@intlify/vite-plugin-vue-i18n';
 import generateSitemap from 'vite-ssg-sitemap';
 import VueRouter from 'unplugin-vue-router/vite';
 import { VueRouterExports } from 'unplugin-vue-router';
+import Markdown from 'unplugin-vue-markdown/vite'
+
 // https://vitejs.dev/config/
 export default defineConfig({
 	plugins: [
-		vue(),
+		vue({
+			include: [/\.vue$/, /\.md$/],
+		}),
 		VueRouter({
 			dts: true,
 			routesFolder: 'src/pages',
+			extensions: ['vue', 'md'],
 		}),
+		Markdown(),
 		Components({
 			dts: true,
 			resolvers: [
@@ -54,39 +59,6 @@ export default defineConfig({
 			resolvers: [],
 		}),
 		Layouts(),
-		VitePWA({
-			includeAssets: [
-				'favicon-16x16.png',
-				'favicon-32x32.png',
-				'favicon.ico',
-				'robots.txt',
-				'apple-touch-icon.png',
-			],
-			manifest: {
-				name: 'Vitailse',
-				short_name: 'Vitailse',
-				description: 'Opinionated vite template with TailwindCSS',
-				theme_color: '#076AE0',
-				icons: [
-					{
-						src: 'pwa-192x192.png',
-						sizes: '192x192',
-						type: 'image/png',
-					},
-					{
-						src: 'pwa-512x512.png',
-						sizes: '512x512',
-						type: 'image/png',
-					},
-					{
-						src: 'pwa-512x512.png',
-						sizes: '512x512',
-						type: 'image/png',
-						purpose: 'any maskable',
-					},
-				],
-			},
-		}),
 		VueI18n({
 			runtimeOnly: true,
 			compositionOnly: true,
