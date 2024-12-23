@@ -1,0 +1,12 @@
+[
+    {
+      "source": "https://www.sitename.com/",
+      "status": "301",
+      "target": "https://sitename.com"
+    },
+    {
+      "source": "</^[^.]+$|\\.(?!(css|gif|ico|jpg|jpeg|js|png|txt|svg|woff|ttf|map|json|xml)$)([^.]+$)/>",
+      "status": "200",
+      "target": "/index.html"
+    }
+  ]
